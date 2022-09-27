@@ -12,8 +12,8 @@ import org.junit.platform.suite.api.Suite;
 @ConfigurationParameter(key = Constants.PLUGIN_PROPERTY_NAME, value = "pretty")
 @ConfigurationParameter(
 	key = Constants.GLUE_PROPERTY_NAME,
-	value = "io.github.tobiasz.testola1.acceptance," +
-		"io.github.tobiasz.testola1.acceptance.cucumberconfig"
+	value = "io.github.tobiasz.assignmenttestola2.acceptance," +
+		"io.github.tobiasz.assignmenttestola2.acceptance.cucumberconfig"
 )
 @ConfigurationParameter(key = Constants.PLUGIN_PUBLISH_QUIET_PROPERTY_NAME, value = "true")
 public class CucumberAcceptanceTest {

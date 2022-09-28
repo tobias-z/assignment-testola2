@@ -1,4 +1,4 @@
-package io.github.tobiasz.assignmenttestola2.service.impl;
+package io.github.tobiasz.assignmenttestola2.service;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

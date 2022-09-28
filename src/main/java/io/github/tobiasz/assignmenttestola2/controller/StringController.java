@@ -1,6 +1,6 @@
 package io.github.tobiasz.assignmenttestola2.controller;
 
-import io.github.tobiasz.assignmenttestola2.service.impl.StringService;
+import io.github.tobiasz.assignmenttestola2.service.StringService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

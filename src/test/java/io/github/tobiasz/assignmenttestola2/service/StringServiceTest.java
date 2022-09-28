@@ -1,4 +1,4 @@
-package io.github.tobiasz.assignmenttestola2.service.impl;
+package io.github.tobiasz.assignmenttestola2.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.fail;

@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.web.servlet.MockMvc;
 
-public class UppercaseStringAcceptance {
+public class UppercaseStringAcceptanceTest {
 
     @Autowired
     private MockMvc mvc;

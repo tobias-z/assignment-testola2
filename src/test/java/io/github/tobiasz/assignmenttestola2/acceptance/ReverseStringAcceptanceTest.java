@@ -9,26 +9,26 @@ import io.cucumber.java.en.When;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.web.servlet.MockMvc;
 
-public class LowercaseStringAcceptance {
+public class ReverseStringAcceptanceTest {
 
     @Autowired
     private MockMvc mvc;
     private String actual;
 
-    @Given("that i want to lowercase a string")
-    public void thatIWantToLowercaseAString() {
+    @Given("that i want to reverse a string")
+    public void thatIWantToReverseAString() {
     }
 
-    @When("the uppercase string is {string}")
-    public void theUppercaseStringIs(String input) throws Exception {
-        this.actual = this.mvc.perform(get("/string/lowercase").queryParam("string", input))
+    @When("the string is {string}")
+    public void theStringIs(String input) throws Exception {
+        this.actual = this.mvc.perform(get("/string/reverse").queryParam("string", input))
             .andReturn()
             .getResponse()
             .getContentAsString();
     }
 
-    @Then("the lowercased string is {string}")
-    public void theLowercasedStringIs(String expected) {
-        assertThat(actual).isEqualTo(expected);
+    @Then("the reversed string is {string}")
+    public void theReversedStringIs(String expected) {
+        assertThat(this.actual).isEqualTo(expected);
     }
 }

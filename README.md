@@ -64,14 +64,31 @@ If you want to read more horror stories look at the following link: https://www.
 
 ## String Utility KATA
 
-- Reverse string
-- Capitalize string
-- Lowercase string
+1. Reverse string
+   - [Feature](src/test/resources/features/reverse-string.feature)
+   - [Acceptance tests](src/test/java/io/github/tobiasz/assignmenttestola2/acceptance/ReverseStringAcceptanceTest.java)
+   - [Unit Tests](src/test/java/io/github/tobiasz/assignmenttestola2/service/StringServiceTest.java)
+   - [Implementation](src/main/java/io/github/tobiasz/assignmenttestola2/service/StringService.java)
+2. Capitalize string
+    - [Feature](src/test/resources/features/uppercase-string.feature)
+    - [Acceptance tests](src/test/java/io/github/tobiasz/assignmenttestola2/acceptance/UppercaseStringAcceptanceTest.java)
+    - [Unit Tests](src/test/java/io/github/tobiasz/assignmenttestola2/service/StringServiceTest.java)
+    - [Implementation](src/main/java/io/github/tobiasz/assignmenttestola2/service/StringService.java)
+3. Lowercase string
+    - [Feature](src/test/resources/features/lowercase-string.feature)
+    - [Acceptance tests](src/test/java/io/github/tobiasz/assignmenttestola2/acceptance/LowercaseStringAcceptanceTest.java)
+    - [Unit Tests](src/test/java/io/github/tobiasz/assignmenttestola2/service/StringServiceTest.java)
+    - [Implementation](src/main/java/io/github/tobiasz/assignmenttestola2/service/StringService.java)
 
 ## Bowling Game KATE
 
 I may have done this wrong? I found this task really weird since the solution is just given to us. I would have liked this way
 more if we only got the task description given to us without the solution afterwards!
+
+- [Feature](src/test/resources/features/game.feature)
+- [Acceptance tests](src/test/java/io/github/tobiasz/assignmenttestola2/acceptance/GameAcceptanceTest.java)
+- [Unit Tests](src/test/java/io/github/tobiasz/assignmenttestola2/service/GameTest.java)
+- [Implementation](src/main/java/io/github/tobiasz/assignmenttestola2/service/Game.java)
 
 ## JUnit 5 (Jupiter)
 

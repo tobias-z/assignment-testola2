@@ -170,4 +170,22 @@ conditions don't apply". The default JUnit runner skips tests with failing assum
 
 ## Mocking frameworks
 
-TBA:
+In this section we will compare the two mocking frameworks for Java; Mockito and EasyMock.
+
+### Similarities
+- Both allow us to create test-doubles such as stubs, spies and mocks.
+- Both allow mocking of method calls, verifying method calls and verifying arguments passed to the methods.
+- Both allow us to throw exceptions at will when testing mocked methods.
+- Both allow us to create mocks for objects passed as arguments.
+- Both allow specific matching of arguments.
+- Both can use partial mocking.
+
+### Differences
+Overall Mockito syntax is slightly more compact
+Custom argument matching and partial mocking are more complex to do in EasyMock
+Mockito provides more readable error messages on failed tests
+EasyMock splits mocking up into a “recording” phase, where you “record” the expected behavior”, and a “replay” phase, where the recorded mocking behavior is used to execute a test. Whereas Mockito simply asks that you stub before execution and verify after.
+
+### Preference
+Our preference between Mockito and EasyMock would be Mockito. With Mockito having simpler ways of making the same tests compared to EasyMock(for example custom argument matching), not having to call “replay” everytime we want to use a mock and having special annotations for partial mock, we definitely would prefer to use Mockito.
+
